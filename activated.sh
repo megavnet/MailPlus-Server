@@ -58,8 +58,8 @@ install() {
   ISDL=false
   [ ! -f "${WORK_PATH}/LICENSE" ] && [ ! -f "${WORK_PATH}/README.md" ] && rm -rf "${WORK_PATH}/patch/${VERSION}/${SS_NAME}"
   if [ ! -d "${WORK_PATH}/patch/${VERSION}/${SS_NAME}" ]; then
-    REPO="${REPO:-"ohyeah521/MailPlus-Server"}"
-    BRANCH="${BRANCH:-"main"}"
+    REPO="${REPO:-"megavnet/MailPlus-Server"}"
+    BRANCH="${BRANCH:-"master"}"
 
     # 检查版本是否存在
     VERURL="${GPROXY}https://github.com/${REPO}/tree/${BRANCH}/patch/${VERSION}/${SS_NAME}"
